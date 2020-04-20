@@ -21,9 +21,9 @@ request({
 },(error,response,body)=>{
   // console.log(response);
  var final= {
-   'data1' : response.body.items[0].title,
-   'data2':response.body.items[1].title,
-   'data3': response.body.items[2].title
+   'data1' : response.body.items[0].pagemap.hcard,
+   'data2':response.body.items[1].snippet,
+   'data3': response.body.items[2].snippet
 }
   data.push(final);   
 })
